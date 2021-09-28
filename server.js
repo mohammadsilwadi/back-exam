@@ -20,7 +20,7 @@ const fruitSchema = new mongoose.Schema({
   });
   const fruitModel = mongoose.model('fruit', fruitSchema);
   function getAll(req,res){
-      axios.get('http://fruit-api-301.herokuapp.com/getFruit').then(result=>{
+      axios.get('https://fruit-api-301.herokuapp.com/getFruit').then(result=>{
           res.send(result.data.fruits)
       })
   }
